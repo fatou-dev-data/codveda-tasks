@@ -2,15 +2,15 @@
 # Task 1 – Simple Calculator
 
 ## Description
-Ce programme est une calculatrice basique permettant :
+This program is a basic calculator that allows you to perform:
 - Addition
-- Soustraction
+- Subtraction
 - Multiplication
-- Division (avec gestion des divisions par zéro)
+- Division (with division by zero handling)
 
-## Utilisation
-1. Lancer le script Python.
-2. Entrer deux nombres.
-3. Choisir l'opération.
-4. Le résultat s'affiche.
+## Usage
+1. Run the Python script.
+2.Enter two numbers.
+3. Choose the desired operation.
+4. The result will be displayed.
 
