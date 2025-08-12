@@ -1,7 +1,7 @@
 def addition(a, b):
     return a + b
 
-def soustraction(a, b):
+def subtraction(a, b):
     return a - b
 
 def multiplication(a, b):
@@ -9,28 +9,36 @@ def multiplication(a, b):
 
 def division(a, b):
     if b == 0:
-        return "Erreur : Division par zéro interdite."
+        return "Error: Division by zero is not allowed."
     return a / b
 
-# Entrée utilisateur
-a = float(input("Entrez le premier nombre : "))
-b = float(input("Entrez le deuxième nombre : "))
+# User input
+a = float(input("Enter the first number: "))
+b = float(input("Enter the second number: "))
 
-print("\nChoisissez l'opération :")
+print("\nChoose the operation:")
 print("1 - Addition (+)")
-print("2 - Soustraction (-)")
+print("2 - Subtraction (-)")
 print("3 - Multiplication (*)")
 print("4 - Division (/)")
 
-choix = input("Votre choix (1/2/3/4) : ")
+choice = input("Your choice (1/2/3/4): ")
 
-if choix == "1":
-    print("Résultat :", addition(a, b))
-elif choix == "2":
-    print("Résultat :", soustraction(a, b))
-elif choix == "3":
-    print("Résultat :", multiplication(a, b))
-elif choix == "4":
-    print("Résultat :", division(a, b))
+if choice == "1":
+    result = addition(a, b)
+    operator = "+"
+elif choice == "2":
+    result = subtraction(a, b)
+    operator = "-"
+elif choice == "3":
+    result = multiplication(a, b)
+    operator = "*"
+elif choice == "4":
+    result = division(a, b)
+    operator = "/"
 else:
-    print("Choix invalide.")
+    print("Invalid choice.")
+    result = None
+
+if result is not None:
+    print(f"{a} {operator} {b} = {result}")
